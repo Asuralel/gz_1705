@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<style>
+		.box{width:200px;height:100px;background-color: #f00;position:absolute;}
+	</style>
+	<!-- <script src="lib/jquery-3.1.1.js"></script>
+	<script src="lib/jquery-xCarousel/jquery.xcarousel.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/home.js"></script> -->
+
+	<!-- 
+		利用requirejs这个工具，在js中加载js文件 
+		data-main:入口模块
+			当前require.js加载完成后，自动自行data-main中的文件
+		baseUrl:
+			data-main文件所在的路径（js/）
+			requirejs中所有的模块都是基于这个路径加载
+	-->
+	<script src="lib/require.js" data-main="js/home"></script>
+
+</head>
+<body>
+	<h1>首页</h1>
+	<div class="box"></div>
+</body>
+</html>
